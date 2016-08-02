@@ -1,0 +1,15 @@
+<h1> This is Calvin's Rails App </h1>
+<h1> These are my articles </h1>
+
+<ul id="articles">
+  <% @articles.each do |arts| %>
+    <li>
+      <%= link_to arts.title %>
+    </li>
+  <%end%>
+</ul>
+
+<%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+
+
+
